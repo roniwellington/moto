@@ -102,3 +102,40 @@
 }
 
 .sercive-list:last-child .service-item { margin-block-start: 40px;}
+
+/*-----------------------------------*\
+  #CTA
+\*-----------------------------------*/
+
+.cta .container {
+    display: grid;
+    gap: 30px;
+}
+
+.cta-card {
+    background-color: var(--yellow-green);
+    padding: 50px 30px 40px;
+    color: var(--white);
+    border-radius: var(--radius-50) 0;
+}
+
+.cta-card .card-title {
+    color: var(--white);
+    line-height: 1.3;
+}
+
+.cta-card .card-text { margin-block: 10px 30px;}
+
+.cta-card .card-text { margin-block: 10px 30px;}
+
+.cta-card .btn:is(:hover, :focus-visible){
+    background-color: var(--white);
+    color: var(--smoky-black);
+}
+
+.cta-banner {
+    height: 260px;
+    border-radius: 0 var(--radius-50);
+    overflow: hidden;
+    background-color: var(--light-gray);
+}

@@ -303,7 +303,7 @@ body {
     background-color: var(--light-gray);
     overflow: hidden;
 }
-/* 
+
 [data-reveal]{
     opacity: 0;
     transform: translateY(20px);
@@ -317,7 +317,7 @@ body {
 [data-reveal].revealed {
     opacity: 1;
     transform: translate(0);
-} */
+}
 
 /*-----------------------------------*\
   #PRELOADER
