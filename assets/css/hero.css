@@ -1,0 +1,99 @@
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+
+.hero-list { display: none;}
+
+.hero {
+    position: relative;
+    background-color: var(--yellow-green);
+    padding-block: calc(var(--section-padding) + 60px) 0;
+    margin-block-end: var(--section-padding);
+}
+
+.hero .container {
+    display: grid;
+    gap: 50px;
+}
+
+.hero-title {
+    color: var(--white);
+    text-align: center;
+    line-height: 1.4;
+    margin-block-end: 30px;
+}
+
+.hero-title .span {
+    display: inline;
+    color: var(--smoky-black);
+}
+
+.hero .btn { margin-inline: auto;}
+
+.hero .btn:is(:hover, :focus-visible){
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.hero-banner { margin-block-end: -15%;}
+
+/*-----------------------------------*\
+  #ABOUT
+\*-----------------------------------*/
+
+.about .container {
+    display: grid;
+    gap: 40px;
+}
+
+.about-banner .img-1 { border-top-left-radius: var(--radius-50);}
+
+.about-banner .img-2 { border-bottom-right-radius: var(--radius-50);}
+
+.about .section-title { margin-block: 10px 25px;}
+
+.about-wrapper {
+    margin-block: 35px 25px;
+    display: grid;
+    gap: 20px;
+}
+
+.about-card .title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-block-end: 5px;
+}
+
+.about-card .title-wrapper ion-icon {
+    color: var(--yellow-green);
+    font-size: 4rem;
+    --ionicon-stoke-width: 20px; 
+}
+
+.about-card .card-title {
+    color: var(--smoky-black);
+    font-family: var(--ff-quicksand);
+    font-size: var(--fs-8);
+}
+
+.about-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-block-end: 10px;
+}
+
+.about-item ion-icon {
+    flex-shrink: 0;
+    color: var(--yellow-green);
+    font-size: 2rem;
+}
+
+.about-item .span {
+    color: var(--smoky-black);
+    font-size: var(--fs-9);
+    font-weight: var(--fw-700);
+}
+
+.about .btn { margin-block-start: 40px;}
