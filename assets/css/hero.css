@@ -2,18 +2,22 @@
   #HERO
 \*-----------------------------------*/
 
-.hero-list { display: none;}
+.hero-list {
+    display: none;
+}
 
 .hero {
     position: relative;
     background-color: var(--yellow-green);
     padding-block: calc(var(--section-padding) + 60px) 0;
     margin-block-end: var(--section-padding);
+    top: 70px;
 }
 
 .hero .container {
     display: grid;
     gap: 50px;
+
 }
 
 .hero-title {
@@ -28,14 +32,19 @@
     color: var(--smoky-black);
 }
 
-.hero .btn { margin-inline: auto;}
+.hero .btn {
+    margin-inline: auto;
+}
 
-.hero .btn:is(:hover, :focus-visible){
+.hero .btn:is(:hover, :focus-visible) {
     background-color: var(--white);
     color: var(--black);
 }
 
-.hero-banner { margin-block-end: -15%;}
+.hero-banner {
+    margin-block-end: -15%;
+}
+
 
 /*-----------------------------------*\
   #ABOUT
@@ -46,11 +55,17 @@
     gap: 40px;
 }
 
-.about-banner .img-1 { border-top-left-radius: var(--radius-50);}
+.about-banner .img-1 {
+    border-top-left-radius: var(--radius-50);
+}
 
-.about-banner .img-2 { border-bottom-right-radius: var(--radius-50);}
+.about-banner .img-2 {
+    border-bottom-right-radius: var(--radius-50);
+}
 
-.about .section-title { margin-block: 10px 25px;}
+.about .section-title {
+    margin-block: 10px 25px;
+}
 
 .about-wrapper {
     margin-block: 35px 25px;
@@ -68,7 +83,7 @@
 .about-card .title-wrapper ion-icon {
     color: var(--yellow-green);
     font-size: 4rem;
-    --ionicon-stoke-width: 20px; 
+    --ionicon-stroke-width: 20px;
 }
 
 .about-card .card-title {
@@ -96,4 +111,6 @@
     font-weight: var(--fw-700);
 }
 
-.about .btn { margin-block-start: 40px;}
+.about .btn {
+    margin-block-start: 40px;
+}

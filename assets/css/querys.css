@@ -1,0 +1,73 @@
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for large than 575px screen
+ */
+
+@media (min-width: 575px) {
+    /**
+   * CUSTOM PROPERTY
+   */
+
+    :root {
+
+        /**
+     * typography
+     */
+
+        --fs-2: 4.2rem;
+
+    }
+
+
+
+    /**
+   * REUSED STYLE
+   */
+    .btn-secondary {
+        padding-inline: 70px;
+    }
+
+    /**
+   * HERO
+   */
+
+    .hero .container {
+        grid-template-columns: 0.8fr 1fr;
+        align-items: flex-end;
+        gap: 0;
+    }
+
+    .hero{
+        top: 50px;
+        padding: 20px;
+    }
+
+    .hero-content { margin-block: 50px;}
+
+    .hero-title {
+        text-align: left;
+        line-height: 1;
+    }
+
+    .hero .btn { margin-inline: 0;}
+
+    .hero-banner { margin-inline-end: -50%;}
+
+    .hero-banner img {
+        width: 65%;
+    }
+
+
+     /**
+   * ABOUT
+   */
+
+   .about-banner .w-100 { max-width: max-content;}
+
+   .about-banner .img-2 { margin-inline-start: auto;}
+
+    
+}
