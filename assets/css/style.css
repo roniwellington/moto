@@ -295,4 +295,63 @@ body {
 .img-cover {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    transition: var(--transition-2);
 }
+.img-holder {
+    aspect-ratio: var(--white)/ var(--height);
+    background-color: var(--light-gray);
+    overflow: hidden;
+}
+/* 
+[data-reveal]{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 1s ease;
+}
+
+[data-reveal="left"]{ transform: translateX(-30px);}
+
+[data-reveal="right"]{ transform: translateX(30px);}
+
+[data-reveal].revealed {
+    opacity: 1;
+    transform: translate(0);
+} */
+
+/*-----------------------------------*\
+  #PRELOADER
+\*-----------------------------------*/
+
+.preload-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);
+    z-index: 5;
+    display: grid;
+    place-items: center;
+    transition: var(--transition-1);
+}
+
+.preload-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate360 0.5s linear infinite;
+}
+
+@keyframes rotate360 {
+    0% { transform: translate(-50%, -50%) rotate(0);}
+    100% { transform: translate(-50%, -50%) rotate(1turn);}
+}
+
+.preload-box.loaded {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.preload-box.loaded .preload-circle { animation-iteration-count: 1;}
